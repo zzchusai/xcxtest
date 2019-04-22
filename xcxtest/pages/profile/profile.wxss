@@ -1,0 +1,86 @@
+/* pages/profile/profile.wxss */
+.profile-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-login button{
+  font-size: 30rpx;
+  width: 80%;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 90rpx;
+  border: 1px solid#DAD9D9;
+}
+.wechatLogin{
+margin-top:360rpx;
+color: #ffffff;
+background: #0099E5;
+}
+.phoneLogin{
+  margin-top:30rpx;
+}
+.profile-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.avatar{
+  display: flex;
+  flex-direction: row;
+  margin-top:20rpx;
+  height: 129rpx;
+  align-items: center;
+}
+.islogin{
+  height: 129rpx;
+  line-height: 129rpx;
+}
+.avatarImg{
+  width: 129rpx;
+  height: 129rpx;
+  margin-left: 40rpx;
+  margin-right: 30rpx;
+  border-radius: 64.5rpx; 
+}
+.bindtel{
+  margin-right: 120rpx;
+  margin-top:20rpx;
+  border: 2rpx #333 solid;
+  padding: 0rpx 30rpx;
+  border-radius: 10rpx;
+  height:71rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-my{
+  margin-top: 200rpx;
+}
+.profile-cell{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 50rpx;
+}
+.profile-cell image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 60rpx
+}
+.profile-cell text{
+  margin-left:40rpx; 
+}
+.profile-line{
+  width: 100%;
+  height: 4rpx;
+  background:#cccccc; 
+  margin: 20rpx 0;
+}
+.loginout{
+  margin-top: 80rpx;
+  border-radius:30rpx;
+  margin: 0 20rpx; 
+}

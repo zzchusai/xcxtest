@@ -16,7 +16,7 @@ const getCode = function(callBack){
 }
 
 const getUser = function(callBack){
-  net.netStatus();
+  net.netState();
   getCode(function(code){
     wx.getSetting({
       success: res => {
@@ -39,17 +39,23 @@ const getUser = function(callBack){
 function getLoginInfo(code,info,callBack){
   let devid = app.globalData.isIos ? "ios" :"android";
   net.http({
-    url: "smallLogin",
-    parameter: { encryptedData: info.encryptedData, iv: info.iv, code: code, img_url: info.userInfo.avatarUrl, username: info.userInfo.nickName, devid: devid},
+    url: "login",
+    method:'get',
+    // parameter: { encryptedData: info.encryptedData, iv: info.iv, code: code, img_url: info.userInfo.avatarUrl, username: info.userInfo.nickName, devid: devid},
+    parameter:{
+      username:'zzc',
+      password:'123456'
+    },
     fuSuccess(res) {
-      
+      // console.log(res)
       if (typeof (callBack) == "function") {
-        callBack(res.data);
+        callBack(res.data, info.userInfo.avatarUrl);
       }
     },
     fuFail(res){
+      console.log(res.data.msg)
       wx.showToast({
-        title: res.data.msg,
+        title: "res.data.data.msg",
         icon: "none"
       })
     },

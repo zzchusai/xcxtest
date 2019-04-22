@@ -1,4 +1,6 @@
 // pages/home/home.js
+const app=getApp();
+const net=require("../../utils/http.js");
 Page({
 
   /**

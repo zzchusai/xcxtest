@@ -6,7 +6,7 @@ const time = require("/utils/time.js");
 App({
   onLaunch: function () {
     if (wx.getStorageSync("userInfo")){
-      this.globalData.userInfo = JSON.parse(wx.getStorageSync("userInfo"));
+      this.globalData.userInfo = wx.getStorageSync("userInfo");
     }
     
     this.globalData.token = wx.getStorageSync("token");
@@ -14,6 +14,7 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log(res)
         this.globalData.loginCode = res.code;
       },
       fail: error=>{

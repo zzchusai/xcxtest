@@ -1,0 +1,68 @@
+/* pages/phoneLogin/phoneLogin.wxss */
+.bindTel{
+  margin-top: 40rpx;
+}
+.tel{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 60rpx;
+  border-bottom: 4rpx solid #cccccc;
+}
+.placeholder{
+  font-size: 30rpx;
+  color: #cccccc;
+}
+input{
+  font-size: 30rpx;
+  height: 100rpx;
+  color: #323333;
+}
+.code{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 60rpx;
+  border-bottom: 4rpx solid #cccccc;
+}
+.nocode{
+  display: inline-block;
+ width: 250rpx;
+ height: 80rpx;
+ font-size: 36rpx;
+ line-height: 80rpx;
+ border: 4rpx solid #cccccc;
+ text-align: center;
+ color: #cccccc;
+ border-radius: 30rpx;
+}
+.iconclear{
+  margin-right: 40rpx;
+}
+.getcode{
+color: #BD9973;
+border: 4rpx #BD9973 solid;
+display: inline-block;
+ width: 250rpx;
+ height: 80rpx;
+ font-size: 36rpx;
+ line-height: 80rpx;
+ text-align: center;
+ border-radius: 30rpx;
+}
+.bindTel-submit{
+  margin-top: 100rpx;
+  margin:100rpx 60rpx 0;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 46rpx;
+   color: #ffffff;
+  background-color: #BD9973;
+}
+.btnlogin{
+  color: #cccccc;
+  background: #ffffff;
+  border: 4rpx solid #cccccc;
+}

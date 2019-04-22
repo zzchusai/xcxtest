@@ -1,6 +1,6 @@
 const app = getApp();
 
-const baseUrl = "https://app.sfys365.xyz/"; //设置基础url
+const baseUrl ="https://www.easy-mock.com/mock/5c7a4e0fdc9d506d00c57372/xcx/"; //设置基础url
 
 const switchTo = function(path) {
   const length = getCurrentPages().length;
@@ -122,14 +122,15 @@ const http = function (request) {
       requestPayment.fuFail(res);
     },
     complete(res) {
-      netStatus();
+      netState();
       requestPayment.complete(res);
 
     }
   })
 }
 
-const netStatus = function (callBack) {
+//网络状态
+const netState = function (callBack) {
   wx.getNetworkType({
     success: function (res) {
       if (res.networkType == 'none') {
@@ -157,6 +158,6 @@ const netStatus = function (callBack) {
 
 module.exports = {
   http: http, //发起请求
-  netStatus: netStatus, //网络状态
+  netState: netState, //网络状态
   switchTo: switchTo
 }

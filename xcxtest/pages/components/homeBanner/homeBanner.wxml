@@ -1,0 +1,15 @@
+<!--pages/components/homeBanner/homeBanner.wxml-->
+<swiper
+  class='home-banner'
+  indicator-dots=''
+  autoplay='true'
+  circular='true'
+  indicator-color='#fff'
+  indicator-active-color='#fff'
+  >
+<block wx:for="{{bannerData}}" wx:key="{{index}}">
+  <swiper-item>
+    <!-- <image src='{{item.}}' data-index='{{index}}'></image> -->
+  </swiper-item>
+</block>
+</swiper>
